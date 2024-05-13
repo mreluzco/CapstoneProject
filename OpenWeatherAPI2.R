@@ -32,7 +32,7 @@ get_weather_forecaset_by_cities <- function(city_names){
   city <- c(city, city_name)
       weather <- c(weather, result$weather[[1]]$main)
       visibility <- c(visibility, result$visibility)
-      temp <- c(temp, result$temp)
+      temp <- c(temp, result$main$temp)
       temp_min <- c(temp_min, result$main$temp_min)
       temp_max <- c(temp_max, result$main$temp_max)
       pressure <- c(pressure, result$main$pressure)
